@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>food menu</title>
     <style>
-         h3{
+        h3 {
             /* text-transform: uppercase; */
             border: 3px solid transparent;
             background-color: burlywood;
@@ -13,77 +14,86 @@
             width: 160px;
             text-align: center;
             color: black;
-            font-family:Arial, Helvetica, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
             font-size: px;
         }
-       
-        #main{
-            
+
+        #main {
+
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
-            width:800px
+            width: 800px
         }
-        ul{
+
+        ul {
             list-style-type: none;
         }
-         #appe{
-            
+
+        #appe {
+
             display: flex;
             flex-direction: row-reverse;
             justify-content: space-evenly;
-            width:800px
+            width: 800px
         }
-         #bev{
-            
+
+        #bev {
+
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
-            width:800px
+            width: 800px
         }
-        img{
-            height:150px;
+
+        img {
+            height: 150px;
             border: 3px solid transparent;
             border-radius: 100px;
-            
+
         }
-        h1{
-            width:750px;
+
+        h1 {
+            width: 750px;
             text-align: center;
             text-shadow: 6px 6px skyblue;
             font-size: 60px;
         }
-        h4{
-             width:750px;
+
+        h4 {
+            width: 750px;
             text-align: center;
             text-decoration: underline;
         }
-        #b1{
-            
+
+        #b1 {
+
             /* background-color: black; */
             color: aliceblue;
-            margin: 200px ;
+            margin: 200px;
             height: 800px;
             width: 750px;
 
         }
-        
-        #sp{
+
+        #sp {
             border: 3px solid transparent;
             background-color: burlywood;
-            border-radius:10px ;
+            border-radius: 10px;
             font-size: 8px;
 
         }
-         #sp1{
+
+        #sp1 {
             margin-left: 10px;
             border: 3px solid transparent;
             background-color: burlywood;
-            border-radius:10px ;
-             font-size: 8px;
+            border-radius: 10px;
+            font-size: 8px;
 
         }
-        body{
+
+        body {
             background-image: url(data:image/jpeg;base64,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);
             background-repeat: no-repeat;
             background-size: 100%;
@@ -92,76 +102,78 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
-<body >
+
+<body>
     <div id="b1">
-    <h1>FOOD MENU</h1>
-    <h4>Paucek and Lage Restaurant</h4>
-    <h3>mainCourse</h3>
-    <div id="main">
-    <ul>
-        <li>Cheeseburger</li>
-        <li>Cheese sandwich</li>
-        <li>Chicken burgers</li>
-        <li>Spicy chicken</li>
-        <li>Hot dog</li>
-    </ul>
-    <ul>
-        <li>&#8377;550</li>
-        <li>&#8377;470</li>
-        <li>&#8377;395</li>
-        <li>&#8377;350</li>
-        <li>&#8377;300</li>
-    </ul>
-    <img src="../images/main.jpeg" alt="main_course">
-    </div>
-    
-    <h3>appetizers</h3>
-    <div id="appe">
-    <ul>
-        <li>Fruit Salad</li>
-        <li>Cocktails</li>
-        <li>Nuggets</li>
-        <li>Sandwich</li>
-        <li>French Fries</li>
-    </ul>
-    <ul>
-        <li>&#8377;300</li>
-        <li>&#8377;250</li>
-        <li>&#8377;320</li>
-        <li>&#8377;200</li>
-        <li>&#8377;350</li>
-    </ul>
-    <img src="../images/appetizers.jpeg" alt="main_course">
-    </div>
-    
-    <h3>beverages</h3>
-    <div id="bev">
-    <ul>
-        <li>Milk Shake</li>
-        <li>Iced Tea</li>
-        <li>Orange Juice</li>
-        <li>Lemon Tea</li>
-        <li>Coffee</li>
-    </ul>
-    <ul>
-        <li>&#8377;180</li>
-        <li>&#8377;120</li>
-        <li>&#8377;80</li>
-        <li>&#8377;50</li>
-        <li>&#8377;195</li>
-    </ul>
-    <img src="../images/beverages.jpeg" alt="main_course">
-    </div>
-    <span id="sp"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill"
-        viewBox="0 0 16 16">
-        <path fill-rule="evenodd"
-            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
-    </svg>123-456-7890 </span>
-    <span id="sp1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill"
-            viewBox="0 0 16 16">
-            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
-        </svg>123 Anywhere St., Any City</span>
+        <h1>FOOD MENU</h1>
+        <h4>Paucek and Lage Restaurant</h4>
+        <h3>mainCourse</h3>
+        <div id="main">
+            <ul>
+                <li>Cheeseburger</li>
+                <li>Cheese sandwich</li>
+                <li>Chicken burgers</li>
+                <li>Spicy chicken</li>
+                <li>Hot dog</li>
+            </ul>
+            <ul>
+                <li>&#8377;550</li>
+                <li>&#8377;470</li>
+                <li>&#8377;395</li>
+                <li>&#8377;350</li>
+                <li>&#8377;300</li>
+            </ul>
+            <img src="../images/main.jpeg" alt="main_course">
         </div>
-    
+
+        <h3>appetizers</h3>
+        <div id="appe">
+            <ul>
+                <li>Fruit Salad</li>
+                <li>Cocktails</li>
+                <li>Nuggets</li>
+                <li>Sandwich</li>
+                <li>French Fries</li>
+            </ul>
+            <ul>
+                <li>&#8377;300</li>
+                <li>&#8377;250</li>
+                <li>&#8377;320</li>
+                <li>&#8377;200</li>
+                <li>&#8377;350</li>
+            </ul>
+            <img src="../images/appetizers.jpeg" alt="main_course">
+        </div>
+
+        <h3>beverages</h3>
+        <div id="bev">
+            <ul>
+                <li>Milk Shake</li>
+                <li>Iced Tea</li>
+                <li>Orange Juice</li>
+                <li>Lemon Tea</li>
+                <li>Coffee</li>
+            </ul>
+            <ul>
+                <li>&#8377;180</li>
+                <li>&#8377;120</li>
+                <li>&#8377;80</li>
+                <li>&#8377;50</li>
+                <li>&#8377;195</li>
+            </ul>
+            <img src="../images/beverages.jpeg" alt="main_course">
+        </div>
+        <span id="sp"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+            </svg>123-456-7890 </span>
+        <span id="sp1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+            </svg>123 Anywhere St., Any City</span>
+    </div>
+
 </body>
+
 </html>
